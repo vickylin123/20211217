@@ -171,6 +171,7 @@ section#Home .slogan h1{
     background: url(../img/設計稿/shop.png)center no-repeat;
     background-size: cover;
     /* height: 110vh; */
+	background-color: #eee;
 }
 #shop .col-md-2{
     display: flex;
@@ -197,6 +198,10 @@ section#Home .slogan h1{
 #shop .col-md-10{
     padding: 20px 70px;
 }
+.box{
+	width: 400px;
+	height: 430px;
+}
 .pd-box{
     position: relative;
     width: 220px;
@@ -210,6 +215,20 @@ section#Home .slogan h1{
     height: 100%;
 	border-style: solid;
 	margin: -10px;
+}
+.red-block{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: rgb(230, 68, 68);
+	top: -15%;
+	left: -20%;
+	z-index: 2;
+}
+.red-block h3{
+	color: white;
+	text-align: center;
+	padding-top: 20%;
 }
 .cart-icon{
     position: absolute;
@@ -549,7 +568,7 @@ section#Home .slogan h1{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+	position: relative;	
 }
 .about-container{
 	transform: translateY(50px);
@@ -593,7 +612,7 @@ section#Home .slogan h1{
 	height: 100%;
 	right: 0;
 	top: 0;
-	background: #ffd335;
+	background: rgb(221, 56, 56);
 	z-index: 0;
 }
 .about-info{
@@ -624,7 +643,7 @@ section#Home .slogan h1{
 	position: absolute;
 	width: 50px;
 	height: 50px;
-	background: #ffd335;
+	background: rgb(221, 56, 56);
 	top: 20%;
 	left: -5%;
 	z-index: 2;
@@ -635,9 +654,22 @@ section#Home .slogan h1{
 	bottom: 8%;
 }
 .icon a{
-	color: #444;
+	color: #fff;
 	font-size: 25px;
-	margin-left: 40px;
+	margin-left: 30px;
+	transition: 0.3s;
+}
+.icon a:hover{
+	font-size: 35px;
+	transition: 0.3s;
+
+}
+.about-img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 60%;
+	margin-right: -10%;
 }
 .navbar-brand{
 	width: 45%;
@@ -669,13 +701,16 @@ section#Home .slogan h1{
 	margin-bottom: 20px;
 }
 .qs-container{
-	width: 50vw;
+	width: 30vw;
+}
+.qs-container p{
+	font-size: 20px;
 }
 /* .qs-container > div p::after-{
 	color: salmon;
 } */
 .qs-container > div{
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	background: bisque;
 	padding: 20px;
 	border-radius: 20px;
@@ -695,14 +730,20 @@ section#Home .slogan h1{
 	transform: rotate(-2deg);
 }
 .qs-container > div:nth-child(2){
-	transform: translateX(-20%) rotate(-3deg);
+	transform: translateX(-70%) rotate(-3deg);
 }
 .qs-container > div:nth-child(3){
-	transform: translateX(20%) rotate(3deg);
+	transform: translateX(80%) rotate(3deg);
+}
+.qs-container > div:nth-child(4){
+	transform: translateX(-30%) rotate(-3deg);
 }
 .qs-container > div:nth-child(5){
-	transform: translateX(20%) rotate(4deg);
+	transform: translateX(40%) rotate(4deg);
 }
 .qs-container > div:nth-child(6){
-	transform: translateX(-20%) rotate(-4deg);
+	transform: translateX(-80%) rotate(-4deg);
+}
+.qs-container > div:nth-child(7){
+	transform: translateX(50%) rotate(3deg);
 }

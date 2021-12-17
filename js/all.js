@@ -282,6 +282,16 @@ var app = new Vue({
                 amount: 0,
                 amountShow: 1
             },
+            {
+                title: 'Switch主機',
+                title2: '可透過連接家中的電視機等的家用電視遊戲機，同時也可拿著搭載 6.2 吋液晶螢幕主機，無論何時何地都可和任何人遊玩的任天堂新型號電視遊戲機。提供可以將遊戲畫面投放到電視以「TV 模式」玩遊戲、拉出主機背面的支架放在桌面上，一邊看著主機螢幕，一邊拿著 Joy-Con 來玩的「桌上模式」、將 Joy-Con 安裝到主機上，像手提遊戲機一樣拿著主機來玩的「手提模式」',
+                carttitle: '勇者鬥惡龍 XI S 尋覓逝去的時光',
+                img: 'img/shop/25.jpg',
+                imgtwo: 'img/shop/25-1.jpg',
+                price: 250,
+                amount: 0,
+                amountShow: 1
+            },
         ],
         productIndex: 0,
         optionIndex: 0,

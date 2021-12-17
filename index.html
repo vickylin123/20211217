@@ -45,30 +45,31 @@
         <p>
           風靡全球、人人瘋搶的任天堂Switch，許多熱門遊戲紛紛帶起熱潮。此共享租賃網站將帶給大家多種熱門款遊戲，想要跟上電玩時代的潮流嗎?不妨玩玩看Switch吧!
         </p>
-        <button class="slogan-btn"><a href="#shop">查看更多</a></button>
+        <button class="slogan-btn"><a href="#about">查看更多</a></button>
       </div>
 
     </section>
 
     <!-- about -->
     <section id="about">
+        <img src="img/shop/40.png" class="about-img"  alt="">
       <div class="row about-container">
         <div class="col-md-7 aboutus">
           <i class="fal fa-cube"></i>
           <div class="about-story">
             <h1>About Us</h1>
-            <p>本網站有許多各式各樣的Switch相關產品，不管是設備還是遊戲片都應有盡有， 配合專門的物流公司，將商品快速且安全的送達，不用購買也可享有遊戲體驗。</p>
+            <p>本網站有各式各樣的Switch相關產品，不論是設備或著是遊戲片都應有盡有，擁有專門配合的物流公司，將商品快速且安全的送達，不用購買也可享有遊戲體驗。</p>
             <p>家裡有塵封已久或是玩到不想玩的遊戲嗎？放在一旁覺得沒有運用價值了嗎？把它放到我們的平台上，租借給他人，價值從0起頭，讓大家一起共享吧！</p>
           </div>
         </div>
         <div class="col-md-5 about-info">
           <div class="info-block">
             <ul>
-              <h4>Info</h4>
-              <li><i class="far fa-envelope"></i>&nbsp;&nbsp;mail</li>
-              <li><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;phone</li>
-              <li><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;address</li>
-              <li><i class="far fa-clock"></i>&nbsp;&nbsp;time</li>
+              <h4>店家資訊</h4>
+              <li><i class="far fa-envelope"></i>&nbsp;&nbsp;Vickyvicky@1234567.com</li>
+              <li><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;1234567890</li>
+              <li><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;香吉市所龍區美路800號300樓</li>
+              <li><i class="far fa-clock"></i>&nbsp;&nbsp;9:00~21:00</li>
             </ul>
           </div>
           <span class="yellow-block"></span>
@@ -86,42 +87,63 @@
         <div class="row h-100">
           <div class="col-md-2">
             <ul>
-              <li @click="optionIndex = 0">熱門專區</li>
+              <li @click="optionIndex = 0">熱門排行</li>
               <li @click="optionIndex = 1">運動系列</li>
               <li @click="optionIndex = 2">馬力歐系列</li>
               <li @click="optionIndex = 3">設備專區</li>
             </ul>
           </div>
           <div class="col-md-10" v-if="optionIndex == 0">
+            <div class="box">
+              <div class="pd-box">
+                <span class="red-block">
+                  <h3>1</h3>
+                </span>
+                <img src="./img/shop/31.jpg" alt="">
+                <i class="fas fa-cart-plus cart-icon" data-toggle="modal" data-target="#shop-window"
+                  @click="productIndex = 22"></i>
+              </div>
+              <p>123</p>
+            </div>
             <div class="pd-box">
-              <img src="./img/shop/31.jpg" alt="">
+              <span class="red-block">
+                <h3>2</h3>
+              </span>
+              <img src="./img/shop/32.jpg" alt="">
               <i class="fas fa-cart-plus cart-icon" data-toggle="modal" data-target="#shop-window"
                 @click="productIndex = 23"></i>
             </div>
             <div class="pd-box">
-              <img src="./img/shop/32.jpg" alt="">
+              <span class="red-block">
+                <h3>3</h3>
+              </span>
+              <img src="./img/shop/33.jpg" alt="">
               <i class="fas fa-cart-plus cart-icon" data-toggle="modal" data-target="#shop-window"
                 @click="productIndex = 24"></i>
             </div>
             <div class="pd-box">
-              <img src="./img/shop/33.jpg" alt="">
+              <span class="red-block">
+                <h3>4</h3>
+              </span>
+              <img src="./img/shop/34.jpg" alt="">
               <i class="fas fa-cart-plus cart-icon" data-toggle="modal" data-target="#shop-window"
                 @click="productIndex = 25"></i>
             </div>
             <div class="pd-box">
-              <img src="./img/shop/34.jpg" alt="">
+              <span class="red-block">
+                <h3>5</h3>
+              </span>
+              <img src="./img/shop/35.jpg" alt="">
               <i class="fas fa-cart-plus cart-icon" data-toggle="modal" data-target="#shop-window"
                 @click="productIndex = 26"></i>
             </div>
             <div class="pd-box">
-              <img src="./img/shop/35.jpg" alt="">
-              <i class="fas fa-cart-plus cart-icon" data-toggle="modal" data-target="#shop-window"
-                @click="productIndex = 27"></i>
-            </div>
-            <div class="pd-box">
+              <span class="red-block">
+                <h3>6</h3>
+              </span>
               <img src="./img/shop/36.jpg" alt="">
               <i class="fas fa-cart-plus cart-icon" data-toggle="modal" data-target="#shop-window"
-                @click="productIndex = 28"></i>
+                @click="productIndex = 27"></i>
             </div>
           </div>
           <div class="col-md-10" v-if="optionIndex == 1">
@@ -242,7 +264,7 @@
             <div class="pd-box">
               <img src="./img/shop/25.jpg" alt="">
               <i class="fas fa-cart-plus cart-icon" data-toggle="modal" data-target="#shop-window"
-                @click="productIndex = 22"></i>
+                @click="productIndex = 28"></i>
             </div>
           </div>
         </div>
@@ -252,7 +274,7 @@
     
 
     <section id="question">
-      <div class="QA">Q＆A</div>
+      <div class="QA">常見問題</div>
       <div class="qs-container">
         <div>
           <p>Q: 租借主機時是否包含JOY-CON？</p>
@@ -260,27 +282,27 @@
         </div>
         <div>
           <p>Q: JOY-CON手把的顏色有幾種選擇？</p>
-          <p>A: JOY-CON手把顏色隨機出借不可選色。</p>
+          <p>A: JOY-CON手把顏色隨機出借無法選色。</p>
         </div>
         <div>
-          <p>Q: 如果器材或遊戲片有損壞／遺失該如何處理？？</p>
-          <p>A: 依損壞程度鑑別後將予會通知賠償金額。</p>
+          <p>Q: 器材或遊戲片損壞／遺失該如何處理？</p>
+          <p>A: 設備還回時，將依損壞程度鑑別後索取賠償金額。</p>
         </div>
         <div>
-          <p>Q: 付款只能用信用卡付款嗎？</p>
-          <p>A: 由於本網站不收取押金，因此只受理信用卡付款的方式。</p>
+          <p>Q: 網路訂購只能用信用卡付款嗎？</p>
+          <p>A: 由於店家不收取押金，因此只受理信用卡付款的方式。</p>
         </div>
         <div>
-          <p>Q: 最終價格有要另外付運費嗎？</p>
-          <p>A: 沒有，本網站不收取任何額外的運費!</p>
+          <p>Q: 總金額有要另外付運費嗎？</p>
+          <p>A: 沒有，本店家不收取任何額外的運費!</p>
         </div>
         <div>
-          <p>Q: 若有任何疑慮，該如何解決與聯繫？</p>
+          <p>Q: </p>
+          <p>A: </p>
+        </div>
+        <div>
+          <p>Q:若有任何疑慮，該如何解決與聯繫？</p>
           <p>A: 詳細請與客服接洽，客服專線:02-12345678。</p>
-        </div>
-        <div>
-          <p>Q: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, omnis veniam recusandae quas veritatis, velit inventore facere cupiditate quos impedit aperiam neque quae quia? Earum adipisci nemo nobis ad eligendi!</p>
-          <p>A: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deleniti, facere minus nam delectus quibusdam aperiam quas soluta fugiat voluptates, similique accusamus ex totam, consequuntur ducimus ipsa quae dolorum. Placeat.</p>
         </div>
       </div>
     </section>
